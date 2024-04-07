@@ -5,64 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skrot och korn produkter</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div style="background-color:bisque;">
-        <img src="images/office.jpg" width="250">
-        <br>
-        <a href="index.html">Startsida</a>
-        <a href="products.html">Våra produkter</a>
-        <a href="contactus.html">Kontakta oss</a>
-        <a href="media.html">Vår media</a>
-    </div>
-    <br>
+    <div class="grid-container-area">
+        <header class="header">
+            <img src="images/office.jpg" width="250">
+            <label for="searchbar">Sök</label>
+            <input type="searchbar" id="searchbar" name="searchbar">
+        </header>
 
-    <div style="background-color: antiquewhite;">
-    <h3>Våra produkter</h3>
+        <nav class="nav">
+            <ul id="menu">
 
-    <img src="images/crane.jpg" width="200">
-    <img src="images/excavator.jpg" width="200">
-    <img src="images/truck.jpg" width="200">
+            </ul>
+        </nav>
 
-    <table border="1">
-        <tr>
-            <th></th>
-            <th>Lyftkran</th>
-            <th>Grävskopa</th>
-            <th>Lastbil</th>
-        </tr>
-        <tr>
-            <th>Pris</th>
-            <td>5000 kr</td>
-            <td>20000 kr</td>
-            <td>7000 kr</td>
-        </tr>
-        <tr>
-            <th>Pris efter moms</th>
-            <td>5999 kr</td>
-            <td>22000 kr</td>
-            <td>8111 kr</td>
-        </tr>
-        <tr>
-            <th>Hästkrafter</th>
-            <td>2000 hk</td>
-            <td>1000 hk</td>
-            <td>500 hk</td>
-        </tr>
-        <tr>
-            <th>Lastvikt</th>
-            <td>20 ton</td>
-            <td>15 ton</td>
-            <td>99 ton</td>
-        </tr>
-    </table>
-    </div>
-    
-    <div style="background-color: azure;">
-        <iframe src="contactform.html" width="350" height="315" style="border:none;"></iframe>
-    </div>
+        <main class="main">
+            <h3>Våra produkter</h3>
 
+            <img src="images/crane.jpg" width="200">
+            <img src="images/excavator.jpg" width="200">
+            <img src="images/truck.jpg" width="200">
+
+            <table border="1" class="products">
+                <tr>
+                    <th></th>
+                    <th>Lyftkran</th>
+                    <th>Grävskopa</th>
+                    <th>Lastbil</th>
+                </tr>
+                <tr>
+                    <th>Pris</th>
+                    <td>5000 kr</td>
+                    <td>20000 kr</td>
+                    <td>7000 kr</td>
+                </tr>
+                <tr>
+                    <th>Pris efter moms</th>
+                    <td>5999 kr</td>
+                    <td>22000 kr</td>
+                    <td>8111 kr</td>
+                </tr>
+                <tr>
+                    <th>Hästkrafter</th>
+                    <td>2000 hk</td>
+                    <td>1000 hk</td>
+                    <td>500 hk</td>
+                </tr>
+                <tr>
+                    <th>Lastvikt</th>
+                    <td>20 ton</td>
+                    <td>15 ton</td>
+                    <td>99 ton</td>
+                </tr>
+                <tr>
+                    <th>Köp</th>
+                    <td><input type="checkbox" id="crane" onchange="productchecked()"></input></td>
+                    <td><input type="checkbox" id="excavator" oninput="productchecked()"></input></td>
+                    <td><input type="checkbox" id="truck" oninput="productchecked()"></input></td>
+                </tr>
+            </table><br>
+            <div id="price">aa</div>
+            <div>
+                <iframe src="contactform.html" width="350" height="315" style="border:none;"></iframe>
+            </div>
+        </main>
+
+        <aside class="aside">
+            Miljövetande
+        </aside>
+
+        <footer class="footer">
+            Copyright 2024
+        </footer>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>

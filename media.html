@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skrot och korn video</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div style="background-color: bisque;">
-    <img src="images/office.jpg" width="250">
-    <br>
-    <a href="index.html">Startsida</a>
-    <a href="products.html">Våra produkter</a>
-    <a href="contactus.html">Kontakta oss</a>
-    <a href="media.html">Vår media</a>
-    <br>
-    <br>
-    </div>
+    <div class="grid-container-area">
+        <header class="header">
+            <img src="images/office.jpg" width="250">
+            <label for="searchbar">Sök</label>
+            <input type="searchbar" id="searchbar" name="searchbar">
+        </header>
+
+        <nav class="nav">
+            <div id="menu">
+
+            </div>
+        </nav>
 
 
-    <div>
+    <main class="main">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hJIBp98DztA?si=Lpp6rmP16eSZ-XiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    
     <div style="background-color: azure;">
         <iframe src="contactform.html" width="350" heigh="315" style="border:none"></iframe>
     </div>
+    </main>
+    
+    <aside class="aside">
+        Miljövetande
+    </aside>
+
+    <footer class="footer">
+        Copyright 2024
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

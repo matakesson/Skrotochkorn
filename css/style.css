@@ -1,0 +1,60 @@
+body{
+    background-color: azure;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: aqua;
+    text-align: center;
+    margin: 5px;
+}
+
+.main{
+    grid-area: main;
+    background-color: azure;
+    margin: 5px;
+    text-align: center;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.grid-container-area{
+    display: grid;
+    grid-template-areas: 
+                'header header header header header header'
+                'nav main main main main aside'
+                'footer footer footer footer footer footer';
+                grid-gap: 10px;
+}
+
+.searchbar{
+    text-align: right;
+}
+
+.products{
+    grid-area: header;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    border-color: green;
+}
